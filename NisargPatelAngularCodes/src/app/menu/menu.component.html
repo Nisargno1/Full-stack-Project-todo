@@ -1,0 +1,15 @@
+<header>
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark" id="navbar">
+        <div> <a routerLink="/home" class="navbar-brand">Todo Shelf</a>  </div>      
+            <ul class="navbar-nav">
+                <!-- Service is called itself because it needs to be applied, but happens when the page is reloded. Page needs to be 
+                    refreshed to record/get username from session -->
+                <li><a *ngIf="hardcodedAuthenticationService.isUserLoggedIn()" routerLink="/welcome/Nisarg" class="nav-link">Home</a></li>
+                <li><a *ngIf="hardcodedAuthenticationService.isUserLoggedIn()" routerLink="/todos" class="nav-link">Todos</a></li>
+            </ul>
+            <ul class="navbar-nav navbar-collapse justify-content-end">
+                <li><a *ngIf="!hardcodedAuthenticationService.isUserLoggedIn()" routerLink="/login" class="nav-link">LogIn</a></li>
+                <li><a *ngIf="hardcodedAuthenticationService.isUserLoggedIn()" routerLink="/logout" class="nav-link">Log-Out</a></li>
+            </ul>
+    </nav><br><br>
+</header>

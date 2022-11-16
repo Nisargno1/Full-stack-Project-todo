@@ -1,0 +1,16 @@
+.content{
+    margin-left: 400px;
+    margin-top: 100px;
+    border: 1px solid black;
+    border-radius: 10px;
+    height: 440px;
+    width: 550px;
+}
+
+#insideForm{
+    display: block;
+    margin: 30px 30px
+}
+button:hover{
+    background-color: crimson;
+}

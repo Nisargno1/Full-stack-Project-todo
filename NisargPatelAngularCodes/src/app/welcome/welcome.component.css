@@ -1,0 +1,16 @@
+#welcome{
+    margin-top: 80px;
+    text-align: center;
+    display: inline-block;
+}
+.temp{
+    display: inline-flex;
+    float: right;
+    border: 1px solid black;
+    height: 20px;
+    width: 20px;
+}
+a{
+    color: rgb(106, 110, 224);
+    text-decoration: none;
+}

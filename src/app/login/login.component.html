@@ -1,0 +1,16 @@
+<div class="content">
+    <h1 style="margin: 30px">Login!</h1>
+    <div class="container">
+        <form class="form-group" id="insideForm" (ngSubmit)="handleLogin()" #todoForm="ngForm">
+        <div class="alert alert-warning" *ngIf="invalidUser">{{errorMessage}}</div>
+
+
+            User Name: <input type="text" class="form-control" name="username" [(ngModel)]="username"><br><br>
+            Password: <input type="password" class="form-control" name="password" [(ngModel)]="password">&nbsp; &nbsp;<br>
+
+            <button type="submit" (click)="handleLogin()" class="btn btn-success" [disabled]="!todoForm.valid">Login</button>
+            <!-- <button (click)="handleJWTAuthLogin()" class="btn btn-success">Login</button> -->
+        </form>
+    </div>
+    
+</div>

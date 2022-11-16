@@ -1,0 +1,15 @@
+#welcome{
+    margin-top: 80px;
+    text-align: center;
+    display: inline-block;
+}
+/* .temp{
+    float: right;
+    border: 1px solid black;
+    height: 100px;
+    width: 100px;
+} */
+a{
+    color: rgb(106, 110, 224);
+    text-decoration: none;
+}
